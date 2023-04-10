@@ -1,4 +1,5 @@
 package ru.netology;
+
 public class Product {
     protected int id;
     protected String title;
@@ -20,27 +21,31 @@ public class Product {
         return id == product.id && price == product.price && title.equals(product.title);
     }
 
-   // @Override
-   // public int hashCode() {
+    // @Override
+    // public int hashCode() {
     //    return Objects.hash(id, title, price);
-   // }
+    // }
 
 
     public int getId() {
         return id;
-}
-public String getTitle() {
+    }
+
+    public String getTitle() {
         return title;
-}
-public int getPrice() {
+    }
+
+    public int getPrice() {
         return price;
-}
-public void setTitle(String newTitle) {
+    }
+
+    public void setTitle(String newTitle) {
         title = newTitle;
-}
-public void setPrice(int newPrice) {
+    }
+
+    public void setPrice(int newPrice) {
         price = newPrice;
-}
+    }
     // геттеры + сеттеры
     // на id только геттер — пусть будет неизменяемым для товара
 }
